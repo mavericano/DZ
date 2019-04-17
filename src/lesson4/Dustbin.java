@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class Dustbin {
     public static void main(String[] args) {
         int credit = 0;
-        while(true) {
+        boolean flag = true;
+
+        while(flag) {
             System.out.println("Please, type your command (insert money  [F] or make a foto [M]");
             Scanner in = new Scanner(System.in);
             String command = in.nextLine();
@@ -25,7 +27,8 @@ public class Dustbin {
                     break;
                 case "Q":
                     System.out.println("Goodbye my lover, goodbye my friend");
-                    System.exit(0);
+                    flag = false;
+                    //System.exit(0);
                     break;
                 default:
                     System.out.println("Err[01]: Invalid command");
