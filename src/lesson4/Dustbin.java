@@ -12,8 +12,8 @@ public class Dustbin {
 
             switch (command) {
                 case "F":
-                    System.out.println("Smile!:)");
                     if (credit > 0) {
+                        System.out.println("Smile!:)");
                         credit--;
                     } else {
                         System.out.println("Err[02]: Not enough money");
@@ -22,6 +22,10 @@ public class Dustbin {
                 case "M":
                     System.out.println("Where are my money , Lebowski?");
                     credit++;
+                    break;
+                case "Q":
+                    System.out.println("Goodbye my lover, goodbye my friend");
+                    System.exit(0);
                     break;
                 default:
                     System.out.println("Err[01]: Invalid command");
