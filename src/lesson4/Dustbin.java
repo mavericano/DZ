@@ -8,10 +8,14 @@ public class Dustbin {
         Scanner in = new Scanner(System.in);
         String command = in.nextLine();
 
-        if("F".equals(command) || "M".equals(command)){
-            System.out.println("Valid command " + command);
-        } else {
-            System.out.println("Err[01]: Invalid command " + command);
+        switch(command){
+            case "F":
+                System.out.println("Smile!:)");
+                break;
+            case "M":
+                System.out.println("Where are my money , Lebowski?");
+            default :
+                System.out.println("Err[01]: Invalid command");
         }
     }
 }
