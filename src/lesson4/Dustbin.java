@@ -14,6 +14,15 @@ public class Dustbin {
             String command = in.nextLine();
 
             switch (command) {
+                case "SystemInfo":
+                    System.out.println("You want the truth? You can't handle the truth!");
+                    String reply = in.nextLine();
+                    if (reply.equals("I pledge to follow the first rule of The Fight Club!")){
+                        System.out.println("Film-talking foto-machine, 2019");
+                        System.out.println("All rights are reserved");
+                        System.out.println("Do not hesitate to tell your friends about it");
+                    }
+                    break;
                 case "F":
                     if (credit > 0) {
                         System.out.println("Smile!:)");
@@ -25,8 +34,19 @@ public class Dustbin {
                 case "M":
                     System.out.println("Where are my money , Lebowski? How much will u give me?");
                     String banknotes = in.nextLine();
-                    int bankNum = Integer.parseInt(banknotes);
-                    m1.countPapers(bankNum);
+                    int bankNum = 0;
+                    try {
+                        bankNum = Integer.parseInt(banknotes);
+
+                    } catch(Exception e) {
+                    }finally{
+                        if (bankNum == 0){
+                            System.out.println("I don't need all those fakies!");
+                        } else {
+                            m1.countPapers(bankNum);
+                        }
+                    }
+                    //m1.countPapers(bankNum);
                     credit += bankNum;
                     break;
                 case "Q":
