@@ -17,8 +17,8 @@ public class Dustbin {
                 case "SystemInfo":
                     System.out.println("You want the truth? You can't handle the truth!");
                     String reply = in.nextLine();
-                    if (reply.equals("I pledge to follow the first rule of The Fight Club!")){
-                        System.out.println("Film-talking foto-machine, 2019");
+                    if (reply.equals("I pledge to follow the rules of The Fight Club!")){
+                        System.out.println("Quote-talking foto-machine, 2019");
                         System.out.println("All rights are reserved");
                         System.out.println("Do not hesitate to tell your friends about it");
                     }
