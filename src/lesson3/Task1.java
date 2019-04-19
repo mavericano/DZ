@@ -1,5 +1,10 @@
 package lesson3;
 
+/*
+Task
+Продолжите приведенный пример, добавьте расчет и вывод суток и недель.
+ */
+
 public class Task1 {
     public static void main(String[] args) {
         int s = 1113700;
