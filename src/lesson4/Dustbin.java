@@ -32,22 +32,31 @@ public class Dustbin {
                     }
                     break;
                 case "M":
-                    System.out.println("Where are my money , Lebowski? How much will u give me?");
+                    System.out.println("Where are my money , Lebowski? How much will u give me? [5] [10] [20]");
                     String banknotes = in.nextLine();
-                    int bankNum = 0;
+                    int banknoteValue = 0;
                     try {
-                        bankNum = Integer.parseInt(banknotes);
-
+                        banknoteValue = Integer.parseInt(banknotes);
+                        switch (banknoteValue){
+                            case 5:
+                                banknoteValue = 5;
+                                break;
+                            case 10:
+                                banknoteValue = 10;
+                                break;
+                            case 20:
+                                banknoteValue = 20;
+                                break;
+                        }
                     } catch(Exception e) {
                     }finally{
-                        if (bankNum == 0){
+                        if (banknoteValue == 0){
                             System.out.println("I don't need all those fakies!");
                         } else {
-                            m1.countPapers(bankNum);
+                            m1.countPapers(banknoteValue);
                         }
                     }
-                    //m1.countPapers(bankNum);
-                    credit += bankNum;
+                    credit += banknoteValue;
                     break;
                 case "Q":
                     System.out.println("Goodbye my lover, goodbye my friend");
