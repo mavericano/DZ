@@ -33,7 +33,7 @@ public class Dustbin {
                     break;
                 case "M":
                     while(true) {
-                        System.out.println("Where are my money , Lebowski? How much will u give me? [5] [10] [20]. Feel free to [cancel] any time!");
+                        System.out.println("Where are my money , Lebowski? How much will u give me? [5] [10] [20]. Feel free to [stop] any time!");
                         String banknotes = in.nextLine();
                         int banknoteValue = 0;
 
@@ -64,6 +64,7 @@ public class Dustbin {
                             }
                         }
                     }
+                    m1.countPapers();
                     break;
 
                 case "Q":
