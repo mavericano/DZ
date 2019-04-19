@@ -13,21 +13,22 @@ public class Dustbin {
             Scanner in = new Scanner(System.in);
             String command = in.nextLine();
 
+
             switch (command) {
                 case "SystemInfo":
                     printInfo(in);
                     break;
                 case "F":
-                    if (credit > 0) {
+                    if (credit >= 10) {
                         System.out.println("Smile!:)");
-                        credit--;
+                        credit -= 10;
                     } else {
                         System.out.println("Err[02]: Not enough money");
                     }
                     break;
                 case "M":
                     insertBanknotes(m1, in);
-                    m1.countPapers();
+                    credit += m1.countPapers();
                     break;
 
                 case "Q":

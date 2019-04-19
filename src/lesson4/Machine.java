@@ -13,11 +13,12 @@ public class Machine {
         papers = banknotes;
     }
 
-    public void countPapers() {
+    public int countPapers() {
         int sum = 0;
         for (int i = 0; i < papers.length; i++) {
             sum += papers[i].value;
         }
         System.out.println("You've inserted " + sum);
+        return sum;
     }
 }
