@@ -8,6 +8,7 @@ public class Dustbin {
         boolean flag = true;
         Machine m1 = new Machine();
 
+        System.out.println("Warning! Warning! Warning! This is not a user-friendly machine! Do you copy? Not a user-friendly machine!");
         while (flag) {
             System.out.println("Please, type your command (insert money  [F] or make a foto [M]");
             Scanner in = new Scanner(System.in);
@@ -20,7 +21,7 @@ public class Dustbin {
                     break;
                 case "F":
                     if (credit >= 10) {
-                        System.out.println("Smile!:)");
+                        System.out.println("Keep your change, You filthy animal!");
                         credit -= 10;
                         printFoto();
                     } else {

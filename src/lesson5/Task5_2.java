@@ -11,10 +11,10 @@ public class Task5_2 {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter your number");
         String num = in.nextLine();
-        char [] dig = num.toCharArray();
+        char[] dig = num.toCharArray();
         int sum = 0;
 
-        for (int i = 0; i < dig.length; i++){
+        for (int i = 0; i < dig.length; i++) {
             sum += Integer.parseInt(Character.toString(dig[i]));
         }
 
