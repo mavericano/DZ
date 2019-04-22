@@ -15,21 +15,22 @@ public class Task5_4 {
 
         char[] dig = num.toCharArray();
         int tmp = dig.length - 1;
-        int i = dig.length - 1;
+        int i = 0;
         String fin = "";
 
-        while (i >= 0) {
+        while (i < dig.length) {
             if (tmp % 3 == 0) {
                 fin += dig[i];
                 fin += " ";
                 //System.out.print(" ");
-                i--;
+                i++;
             } else {
                 fin += dig[i];
-                i--;
+                i++;
             }
             tmp--;
         }
         //char[] dig2 = fin.toCharArray();
+        System.out.println(fin);
     }
 }
