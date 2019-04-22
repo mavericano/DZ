@@ -5,7 +5,7 @@ Task
  */
 public class Task5_1 {
     public static void main(String[] args) {
-        double num[] = {0, 0, 0, 0, 0, 0};
+        double [] num = {0, 0, 0, 0, 0, 0};
         double max = 0;
 
         for (int i = 0; i < 6; i++){
