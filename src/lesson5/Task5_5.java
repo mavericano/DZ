@@ -11,6 +11,9 @@ public class Task5_5 {
         //      {0, 2, 3, 9, 1, 1, 1, 0, 1, 2, 9};
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
+            array[i] = (int) (Math.random() * 100);
+        }
+        for (int i = 0; i < array.length; i++) {
             if (array[i] < min) {
                 min = array[i];
             }
@@ -27,7 +30,7 @@ public class Task5_5 {
             if (array[i] == min) {
                 for (int j = i + 1; j < array.length; j++) {
                     if (array[j] == max) {
-                        if(j-i > len){
+                        if (j - i > len) {
                             stInd = i + 1;
                             endInd = j - 1;
                             len = j - i - 1;
@@ -39,7 +42,7 @@ public class Task5_5 {
             if (array[i] == max) {
                 for (int j = i + 1; j < array.length; j++) {
                     if (array[j] == min) {
-                        if(j - i > len){
+                        if (j - i > len) {
                             stInd = i + 1;
                             endInd = j - 1;
                             len = j - i - 1;
@@ -49,11 +52,11 @@ public class Task5_5 {
                 }
             }
         }
-
+        //target element row found
         System.out.println(len);
 
         for (int i = stInd; i <= endInd; i++) {
-            sum+= array[i];
+            sum += array[i];
         }
         System.out.println(sum);
     }
