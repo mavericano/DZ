@@ -10,7 +10,7 @@ public class Dustbin {
 
         System.out.println("Warning! Warning! Warning! This is not a user-friendly machine! Do you copy? Not a user-friendly machine!");
         while (flag) {
-            System.out.println("Please, type your command (insert money  [F] or make a foto [M]");
+            System.out.println("Please, type your command (insert money  [M] or make a foto [F], [B] to check your balance)");
             Scanner in = new Scanner(System.in);
             String command = in.nextLine();
 
@@ -19,13 +19,16 @@ public class Dustbin {
                 case "SystemInfo":
                     printInfo(in);
                     break;
+                case "B":
+                    System.out.println(credit);
+                    break;
                 case "F":
                     if (credit >= 10) {
                         System.out.println("Keep your change, You filthy animal!");
                         credit -= 10;
                         printFoto();
                     } else {
-                        System.out.println("Err[02]: Not enough money");
+                        System.out.println("Err[02]: Not enough money, you need " + (10 - credit) + " more");
                     }
                     break;
                 case "M":
