@@ -1,6 +1,6 @@
-package lesson8;
+package lesson8.speakers;
 
-public class Speaker implements Pluggable{
+public class Speaker implements Pluggable {
 
     public int songNum;
 

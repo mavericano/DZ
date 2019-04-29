@@ -1,4 +1,4 @@
-package lesson8;
+package lesson8.speakers;
 
 public interface Pluggable {
     void plug();

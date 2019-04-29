@@ -1,6 +1,6 @@
-package lesson8;
+package lesson8.speakers;
 
-public class SmartSpeaker extends BtSpeaker implements Pluggable{
+public class SmartSpeaker extends BtSpeaker implements Pluggable {
     public int currentAlarmH;
     public int currentAlarmM;
 

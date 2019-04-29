@@ -1,6 +1,6 @@
-package lesson8;
+package lesson8.speakers;
 
-public class BtSpeaker extends Speaker implements Pluggable{
+public class BtSpeaker extends Speaker implements Pluggable {
 
     public String connectedDevice;
 
