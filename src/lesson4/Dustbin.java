@@ -164,7 +164,7 @@ public class Dustbin {
                 if (banknoteValue == 0) {
                     System.out.println("Listen... I've saved you and I'm not going to play out charity! Money!!!");
                 } else {
-                    m1.acceptPapers(new Banknote(banknoteValue, "BYN"));
+                    m1.acceptPapers(new Banknote(banknoteValue));
                 }
             }
         }
