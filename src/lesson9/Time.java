@@ -21,4 +21,12 @@ public class Time {
         System.out.println(hour + " часов " + min + " минут " + sec + " секунд");
         return 0;
     }
+
+    public boolean compareTo(Time t1, Time t2) {
+        if ((t1.hour == t2.hour) & (t1.min == t2.min) & (t1.sec == t2.sec)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

@@ -17,7 +17,7 @@ public class Task3 {
         int a = Integer.parseInt(text2);
         int b = Integer.parseInt(text3);
 
-        if(Math.sqrt(a^2 + b^2) < r*2){
+        if(Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2)) < r*2){
             System.out.println("Nope");
         }else{
             System.out.println("Yep");

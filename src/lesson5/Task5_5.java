@@ -10,9 +10,12 @@ public class Task5_5 {
         //      {0, 2, 3, 9};
         //      {0, 2, 3, 9, 1, 1, 1, 0, 1, 2, 9};
         int sum = 0;
+        min = array[0];
+
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * 100);
         }
+
         for (int i = 0; i < array.length; i++) {
             if (array[i] < min) {
                 min = array[i];

@@ -13,6 +13,11 @@ public class Task5_4 {
         System.out.println("Your number is?");
         String num = in.nextLine();
 
+        double tmp1 = Double.parseDouble(num);
+        long tmp2 = (long) tmp1;
+
+        num = String.valueOf(tmp2);
+
         char[] dig = num.toCharArray();
         int tmp = dig.length - 1;
         int i = 0;

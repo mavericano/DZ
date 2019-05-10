@@ -48,7 +48,7 @@ public class Task4_1 {
                         if (d + 1 == 32) {
                             System.out.println("1 " + (m + 1) + " " + y);
                         } else {
-                            System.out.println(d + " " + m + " " + y);
+                            System.out.println((d + 1) + " " + m + " " + y);
                         }
                     }
                     break;
@@ -62,7 +62,7 @@ public class Task4_1 {
                         if (d + 1 == 30) {
                             System.out.println("1 " + (m + 1) + " " + y);
                         } else {
-                            System.out.println(d + " " + m + " " + y);
+                            System.out.println((d + 1) + " " + m + " " + y);
                         }
                     }
                     break;
@@ -80,7 +80,7 @@ public class Task4_1 {
                             if (d + 1 == 29) {
                                 System.out.println("1 " + (m + 1) + y);
                             } else {
-                                System.out.println(d + " " + m + " " + y);
+                                System.out.println((d + 1) + " " + m + " " + y);
                             }
                         }
                     }

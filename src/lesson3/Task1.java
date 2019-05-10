@@ -7,7 +7,7 @@ Task
 
 public class Task1 {
     public static void main(String[] args) {
-        int s = 1113700;
+        int s = 10*24*60*60;
 
         int sec;
 
@@ -27,6 +27,7 @@ public class Task1 {
 
         days = s / (86400);
         weeks = days / 7;
+        days = days - (weeks * 7);
         s -= days * 86400;
 
         h = s / 3600;

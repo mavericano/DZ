@@ -11,8 +11,8 @@ public class Task4_3 {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter you number");
         int currentModifier = 1;
-        int n = in.nextInt();
-        int ind = n;
+        long n = in.nextInt();
+        long ind = n;
 
         while (currentModifier < ind){
              n *= currentModifier;

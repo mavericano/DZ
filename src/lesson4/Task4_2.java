@@ -24,6 +24,10 @@ public class Task4_2 {
             int e = in.nextInt();
             int f = in.nextInt();
 
+            if ((a == 0) || (b == 0) || (c == 0) || (d == 0) || (e == 0) || (f == 0)){
+                System.out.println("Invalid data");
+            }
+
             int min1 = Math.min(a, b);
             int max1 = Math.max(a, b);
             int min2 = Math.min(c, d);

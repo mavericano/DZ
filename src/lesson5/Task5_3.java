@@ -12,7 +12,7 @@ public class Task5_3 {
         System.out.println("Checked number?");
         int num = in.nextInt();
 
-        for (int i = 1; i < num; i++) {
+        for (int i = 2; i < num; i++) {
             if (num % i == 0) {
                 System.out.println("Nope");
                 System.exit(0);
