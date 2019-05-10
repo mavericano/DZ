@@ -1,34 +1,47 @@
 package lesson12;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 public class Writer {
 
     public void writeToFile(byte[] content, String fileName) {
         try {
-            FileOutputStream fileOutputStream = new FileOutputStream(fileName);
+            FileOutputStream fileOutputStream =
+                    new FileOutputStream(fileName, true);
             fileOutputStream.write(content);
             //fileOutputStream.flush();
             //fileOutputStream.close();
 
-        } catch (FileNotFoundException e) {
         } catch (IOException io) {
         }
     }
 
     public byte[] readFromFile(String fileName) {
         try {
-            FileInputStream fileInputStream = new FileInputStream(fileName);
+            File file = new File(fileName);
+            if (!file.exists()) {
+                return null;
+            }
+            FileInputStream fileInputStream;
+            fileInputStream = new FileInputStream(fileName);
 
-            byte[] bytes = new byte[10];
-
+            byte[] bytes = new byte[(int) file.length()];
             fileInputStream.read(bytes);
             return bytes;
         } catch (IOException io) {
         }
         return null;
+    }
+
+    public void readStringFromFile(String fileName) {
+        try {
+            BufferedReader bufferedReader =
+                    new BufferedReader(new FileReader(fileName));
+            while (bufferedReader.ready()) {
+                String s = bufferedReader.readLine();
+                System.out.println(s);
+            }
+        } catch (Exception e) {
+        }
     }
 }
