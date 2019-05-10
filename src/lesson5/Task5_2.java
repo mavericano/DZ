@@ -14,9 +14,20 @@ public class Task5_2 {
         char[] dig = num.toCharArray();
         int sum = 0;
 
-        for (int i = 0; i < dig.length; i++) {
-            sum += Integer.parseInt(Character.toString(dig[i]));
+        if (dig[0] == '-') {
+            for (int i = 1; i < dig.length; i++) {
+                if(!(dig[i] == '.')) {
+                    sum += Integer.parseInt(Character.toString(dig[i]));
+                }
+            }
+        } else{
+            for (int i = 0; i < dig.length; i++) {
+                if(!(dig[i] == '.')) {
+                    sum += Integer.parseInt(Character.toString(dig[i]));
+                }
+            }
         }
+
 
         System.out.println("Solution " + sum);
     }
