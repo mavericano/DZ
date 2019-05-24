@@ -1,4 +1,4 @@
-package lesson17;
+package by.pvt.lesson17;
 
 public class Main17_2 {
 
